@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -283,14 +283,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: download2
+  mTrackableName: ImageTarget2
   mInitializedInEditor: 1
   mDataSetPath: 
-  mAspectRatio: 1
+  mAspectRatio: 1.3368146
   mImageTargetType: 3
-  mWidth: 0.297
+  mWidth: 0.22216992
   mHeight: 0.297
-  mRuntimeTexture: {fileID: 2800000, guid: 7808b8b99f1c80442a0118698ade041f, type: 3}
+  mRuntimeTexture: {fileID: 2800000, guid: 6cf492c2a387da143b50f989fdbd60d6, type: 3}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
@@ -325,7 +325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 223974229}
   mHiddenRoot: {fileID: 0}
-  mTargetName: download2
+  mTargetName: ImageTarget2
   mDatasetName: 
   mCastedBehaviour: {fileID: 223974229}
   mMeshFilter: {fileID: 0}
@@ -573,23 +573,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8429431766893549880, guid: 9e0a093a368ee4f10b7c6c056f5f7077, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.00006149942
       objectReference: {fileID: 0}
     - target: {fileID: 8429431766893549880, guid: 9e0a093a368ee4f10b7c6c056f5f7077, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.083
+      value: 0.082394175
       objectReference: {fileID: 0}
     - target: {fileID: 8429431766893549880, guid: 9e0a093a368ee4f10b7c6c056f5f7077, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.00047564507
       objectReference: {fileID: 0}
     - target: {fileID: 8429431766893549880, guid: 9e0a093a368ee4f10b7c6c056f5f7077, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.06423755
+      value: 0.06423631
       objectReference: {fileID: 0}
     - target: {fileID: 8429431766893549880, guid: 9e0a093a368ee4f10b7c6c056f5f7077, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8429431766893549880, guid: 9e0a093a368ee4f10b7c6c056f5f7077, type: 3}
       propertyPath: m_LocalRotation.y
@@ -597,7 +597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8429431766893549880, guid: 9e0a093a368ee4f10b7c6c056f5f7077, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8429431766893549880, guid: 9e0a093a368ee4f10b7c6c056f5f7077, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -807,14 +807,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: download
+  mTrackableName: Image1
   mInitializedInEditor: 1
   mDataSetPath: 
-  mAspectRatio: 1
+  mAspectRatio: 1.3368145
   mImageTargetType: 3
-  mWidth: 0.28073105
+  mWidth: 0.21
   mHeight: 0.28073105
-  mRuntimeTexture: {fileID: 2800000, guid: a7551b6aab36f3741b38cfeffa0d92c9, type: 3}
+  mRuntimeTexture: {fileID: 2800000, guid: c5fa1859a2cb5314f98ebc884a0c625f, type: 3}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
@@ -849,7 +849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 2146054096}
   mHiddenRoot: {fileID: 0}
-  mTargetName: download
+  mTargetName: Image1
   mDatasetName: 
   mCastedBehaviour: {fileID: 2146054096}
   mMeshFilter: {fileID: 0}
