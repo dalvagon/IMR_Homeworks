@@ -1,4 +1,3 @@
-using System.Numerics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,41 +5,45 @@ using UnityEngine;
 public class SceneBehavior : MonoBehaviour
 {
     public GameObject cactusObj;
-    public GameObject logObj;
+    public GameObject angryLogObj;
 
-    public Animator mAnimator;
+    public Animator mAnimatorCactus;
+    public Animator mAnimatorAngryLog;
 
     public static float EPSILON = 0.25F;
-
 
     // Start is called before the first frame update
     void Start()
     {
-        mAnimator = cactusObj.GetComponent<Animator>();
+        mAnimatorCactus = cactusObj.GetComponent<Animator>();
+        mAnimatorAngryLog = angryLogObj.GetComponent<Animator>();
     }
 
     void Awake() {
         cactusObj = GameObject.FindGameObjectsWithTag("Cactus")[0];
-        logObj = GameObject.FindGameObjectsWithTag("Log")[0];
+        angryLogObj = GameObject.FindGameObjectsWithTag("Log")[0];
     }
 
     // Update is called once per frame
     void Update()
     {
-        cactusObj.transform.LookAt(logObj.transform);
-        logObj.transform.LookAt(cactusObj.transform);
+        cactusObj.transform.LookAt(angryLogObj.transform);
+        angryLogObj.transform.LookAt(cactusObj.transform);
 
-        float distance = UnityEngine.Vector3.Distance(cactusObj.transform.position, logObj.transform.position);
+        float distance = Vector3.Distance(cactusObj.transform.position, angryLogObj.transform.position);
 
-        if (mAnimator != null) 
+        if (mAnimatorCactus != null && mAnimatorAngryLog != null) 
         {
             if (distance < EPSILON)
             {
-                mAnimator.SetTrigger("Tr1");
+                mAnimatorCactus.SetTrigger("CactusTrigger1");
+                mAnimatorAngryLog.SetTrigger("AngryLogTrigger1");
+                float movementSpeed = 1.0F;
+                angryLogObj.transform.position += angryLogObj.transform.forward * Time.deltaTime * movementSpeed;
             }
             else
             {
-                mAnimator.SetTrigger("Tr2");
+                mAnimatorCactus.SetTrigger("CactusTrigger2");
             }
         }
     }

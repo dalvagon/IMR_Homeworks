@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -206,11 +206,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400052, guid: 68d8f3eae01c5744b996aab3358db0a0, type: 3}
   m_PrefabInstance: {fileID: 133326352}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &133326354 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 9500000, guid: 68d8f3eae01c5744b996aab3358db0a0, type: 3}
-  m_PrefabInstance: {fileID: 133326352}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &223974226
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,14 +283,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: ImageTarget2
+  mTrackableName: download2
   mInitializedInEditor: 1
   mDataSetPath: 
-  mAspectRatio: 1.3368146
+  mAspectRatio: 1
   mImageTargetType: 3
-  mWidth: 0.22216992
+  mWidth: 0.297
   mHeight: 0.297
-  mRuntimeTexture: {fileID: 2800000, guid: 6cf492c2a387da143b50f989fdbd60d6, type: 3}
+  mRuntimeTexture: {fileID: 2800000, guid: 7808b8b99f1c80442a0118698ade041f, type: 3}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
@@ -330,7 +325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 223974229}
   mHiddenRoot: {fileID: 0}
-  mTargetName: ImageTarget2
+  mTargetName: download2
   mDatasetName: 
   mCastedBehaviour: {fileID: 223974229}
   mMeshFilter: {fileID: 0}
@@ -365,8 +360,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cactusObj: {fileID: 88117924}
-  logObj: {fileID: 2060950384}
-  mAnimator: {fileID: 133326354}
+  angryLogObj: {fileID: 0}
+  mAnimatorCactus: {fileID: 0}
+  mAnimatorAngryLog: {fileID: 0}
 --- !u!4 &587346942
 Transform:
   m_ObjectHideFlags: 0
@@ -734,11 +730,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2060950384 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4800839809881058091, guid: 9e0a093a368ee4f10b7c6c056f5f7077, type: 3}
-  m_PrefabInstance: {fileID: 782628375}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2146054093
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,14 +807,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PreviewVisible: 1
   RuntimeOcclusion: 0
-  mTrackableName: Image1
+  mTrackableName: download
   mInitializedInEditor: 1
   mDataSetPath: 
-  mAspectRatio: 1.3368145
+  mAspectRatio: 1
   mImageTargetType: 3
-  mWidth: 0.21
+  mWidth: 0.28073105
   mHeight: 0.28073105
-  mRuntimeTexture: {fileID: 2800000, guid: c5fa1859a2cb5314f98ebc884a0c625f, type: 3}
+  mRuntimeTexture: {fileID: 2800000, guid: a7551b6aab36f3741b38cfeffa0d92c9, type: 3}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
@@ -858,7 +849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 2146054096}
   mHiddenRoot: {fileID: 0}
-  mTargetName: Image1
+  mTargetName: download
   mDatasetName: 
   mCastedBehaviour: {fileID: 2146054096}
   mMeshFilter: {fileID: 0}
