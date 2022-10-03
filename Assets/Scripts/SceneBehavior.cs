@@ -10,7 +10,7 @@ public class SceneBehavior : MonoBehaviour
     public Animator cactusAnimator;
     public Animator angryLogAnimator;
 
-    public static float EPSILON = 0.25F;
+    public static float EPSILON = 0.15F;
     public static float SPEED = 0.06F;
 
     // Start is called before the first frame update
@@ -35,11 +35,6 @@ public class SceneBehavior : MonoBehaviour
 
         if (cactusAnimator != null && angryLogAnimator != null) 
         {
-            if (distance > EPSILON ) 
-            {
-                angryLogObj.transform.position += angryLogObj.transform.forward * Time.deltaTime * SPEED;
-            }
-
             if (distance < EPSILON)
             {
                 // Start the attack and run animations
@@ -48,6 +43,12 @@ public class SceneBehavior : MonoBehaviour
             }
             else
             {
+                // Move the angry log object
+                if (cactusObj.GetComponent<Renderer>().isVisible) 
+                {
+                    angryLogObj.transform.position += angryLogObj.transform.forward * Time.deltaTime * SPEED;
+                }
+
                 // Revert to the idle state
                 cactusAnimator.SetTrigger("CactusTrigger2");
                 angryLogAnimator.SetTrigger("AngryLogTrigger2");
