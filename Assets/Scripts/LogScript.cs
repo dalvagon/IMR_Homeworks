@@ -2,24 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CactusScript : MonoBehaviour
+public class LogScript : MonoBehaviour
 {
-    public GameObject cactus;
+    public GameObject log;
 
     // Start is called before the first frame update
     void Start()
     {
         print("Hello");
-        cactus.GetComponent<Animator>().Play("Idle");
-        print("HERE " + cactus.transform.position);
+        log.GetComponent<Animator>().Play("Run");
+        print("HERE " + log.transform.position);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.A))
         {
-            cactus.GetComponent<Animator>().Play("Attack");
+            log.GetComponent<Animator>().Play("Run");
         }
     }
 }
