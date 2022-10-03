@@ -9,7 +9,7 @@ public class SceneBehavior : MonoBehaviour
 
     public Animator mAnimator;
 
-    public static float EPSILON = 0.8F;
+    public static float EPSILON = 0.25F;
 
 
     // Start is called before the first frame update
