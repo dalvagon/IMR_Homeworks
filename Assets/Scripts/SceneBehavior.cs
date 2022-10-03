@@ -41,7 +41,7 @@ public class SceneBehavior : MonoBehaviour
                 mAnimatorAngryLog.SetTrigger("AngryLogTrigger1");
 
                 // Make AngryLog turn around and run
-                angryLogObj.transform.Rotate(18 0, Time.deltaTime * 30, 0, Space.Self);
+                angryLogObj.transform.Rotate(180, Time.deltaTime * 30, 0, Space.Self);
 
                 if (distance > (EPSILON / 4)) 
                 {
