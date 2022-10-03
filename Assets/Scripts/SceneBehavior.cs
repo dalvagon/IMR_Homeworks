@@ -1,3 +1,4 @@
+using System.Numerics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,8 +27,11 @@ public class SceneBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float distance = Vector3.Distance(cactusObj.transform.position, logObj.transform.position);
-        print(distance);
+        cactusObj.transform.LookAt(logObj.transform);
+        logObj.transform.LookAt(cactusObj.transform);
+
+        float distance = UnityEngine.Vector3.Distance(cactusObj.transform.position, logObj.transform.position);
+
         if (mAnimator != null) 
         {
             if (distance < EPSILON)
