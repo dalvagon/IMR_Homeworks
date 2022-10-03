@@ -12,7 +12,6 @@ public class SceneBehavior : MonoBehaviour
 
     public static float EPSILON = 0.25F;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -29,13 +28,14 @@ public class SceneBehavior : MonoBehaviour
     void Update()
     {
         float distance = Vector3.Distance(cactusObj.transform.position, angryLogObj.transform.position);
-        print(distance);
         if (mAnimatorCactus != null && mAnimatorAngryLog != null) 
         {
             if (distance < EPSILON)
             {
                 mAnimatorCactus.SetTrigger("CactusTrigger1");
                 mAnimatorAngryLog.SetTrigger("AngryLogTrigger1");
+                float movementSpeed = 1.0F;
+                angryLogObj.transform.position += angryLogObj.transform.forward * Time.deltaTime * movementSpeed;
             }
             else
             {
