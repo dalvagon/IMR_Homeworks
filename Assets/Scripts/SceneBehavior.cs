@@ -48,7 +48,7 @@ public class SceneBehavior : MonoBehaviour
                 {
                     angryLogObj.transform.position += angryLogObj.transform.forward * Time.deltaTime * SPEED;
                 }
-
+            
                 // Revert to the idle state
                 cactusAnimator.SetTrigger("CactusTrigger2");
                 angryLogAnimator.SetTrigger("AngryLogTrigger2");
