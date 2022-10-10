@@ -287,7 +287,7 @@
                     "path": "<XRController>{LeftHand}/gripPressed",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Generic XR Controller;Continuous Move",
                     "action": "Select",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -805,7 +805,7 @@
                     "path": "<XRController>{RightHand}/gripPressed",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
+                    "groups": "Generic XR Controller;Continuous Move",
                     "action": "Select",
                     "isComposite": false,
                     "isPartOfComposite": false
