@@ -20,7 +20,7 @@ public class ButtonTrigger : MonoBehaviour
     Vector3 leftHand_initialPosition;
     Vector3 rightHand_initialPosition;
 
-    float SCORE_MULTIPLIER = 10;
+    float SCORE_MULTIPLIER = 100;
 
     // Start is called before the first frame update
     void Start()
