@@ -45,7 +45,10 @@ public class ButtonTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            canvas.SetActive(false);
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -71,6 +74,5 @@ public class ButtonTrigger : MonoBehaviour
     void OnTriggerExit(Collider other)
     {
         renderer.material.color = oldColor;
-        canvas.SetActive(false);
     }
 }
