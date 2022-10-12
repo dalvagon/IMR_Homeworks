@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class ButtonTrigger : MonoBehaviour
+public class TargetTrigger : MonoBehaviour
 {
     private Renderer renderer;
     private Color oldColor;
