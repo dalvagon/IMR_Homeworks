@@ -15,7 +15,7 @@ public class TargetTrigger : MonoBehaviour
 
     public GameObject canvas;
     public GameObject scoreText;
-    public Animator animator;
+    public Animator rightHandAnimator, leftHandAnimator;
 
     TextMeshProUGUI textMesh_scoreText;
     Vector3 leftHand_initialPosition;
@@ -42,9 +42,8 @@ public class TargetTrigger : MonoBehaviour
         rightHand_initialPosition = rightHand.transform.position;
         finishButton = GameObject.FindGameObjectsWithTag("Finish")[0];
 
-        animator = leftHand.GetComponent<Animator>();
-        animator.SetBool("hasGrabbed", false);
-        animator.SetBool("hasTriggered", false);
+        leftHandAnimator = leftHand.GetComponent<Animator>();
+        rightHandAnimator = rightHand.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -57,20 +56,14 @@ public class TargetTrigger : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.G))
         {
-            animator.SetBool("hasGrabbed", true);
-        }
-        else
-        {
-            animator.SetBool("hasGrabbed", false);
+            leftHandAnimator.SetTrigger("hasGrabbed");
+            rightHandAnimator.SetTrigger("hasGrabbed");
         }
 
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            animator.SetBool("hasTriggered", true);
-        }
-        else
-        {
-            animator.SetBool("hasTriggered", false);
+            leftHandAnimator.SetTrigger("hasTriggered");
+            rightHandAnimator.SetTrigger("hasTriggered");
         }
     }
 
